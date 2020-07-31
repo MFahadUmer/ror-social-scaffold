@@ -6,14 +6,16 @@
   </section>
   <section class="user-section show-section">
   <h2><%= "Name: #{@user.name}" %>
-  <%= friendship_status_check(@user.id) %>
+  <%= friendship_status_check(@user) %>
   </h2>
 
   <article class="timeline">
     <h3>Recent posts:</h3>
     <ul class="posts">
-      <%= render @posts %>
+      <%= others_post(@user) %>
     </ul>
   </article>
 </section>
 </div>
+
+
