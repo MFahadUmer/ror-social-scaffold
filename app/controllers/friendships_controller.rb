@@ -1,6 +1,7 @@
 class FriendshipsController < ApplicationController
   def create
-    @friendship = current_user.friendships.build(friendship_id: params[:format])
+    # @friendship = current_user.friendships.build(friendship_id: friendship_params)
+    @friendship = current_user.friendships.build(friendship_params)
     @friendship.status = 'Pending'
     return unless @friendship.save
 
@@ -35,7 +36,7 @@ class FriendshipsController < ApplicationController
 
   private
 
-  def user_params
-    params.require(:parameters).permit(:user_id)
+  def friendship_params
+    params.require(:friendship).permit(:user_id)
   end
 end

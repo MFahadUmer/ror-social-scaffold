@@ -21,22 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8d34562-5409-471f-b8e6-798f6e9515b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/friendships_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/friendships_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/friendships_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/friendships_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/friendship.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/friendship.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_friends.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_friends.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_pending.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_pending.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_received.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_received.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/test.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/test.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/examples.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spec/examples.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +162,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -200,12 +187,14 @@
       <workItem from="1596006804641" duration="703000" />
       <workItem from="1596029821565" duration="10000" />
       <workItem from="1596032684117" duration="837000" />
-      <workItem from="1596100190279" duration="28908000" />
+      <workItem from="1596100190279" duration="29842000" />
+      <workItem from="1596243539175" duration="828000" />
+      <workItem from="1596244604125" duration="1693000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

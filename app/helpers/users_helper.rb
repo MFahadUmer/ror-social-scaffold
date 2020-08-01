@@ -12,7 +12,7 @@ module UsersHelper
       link_to 'Cancel', friendship_path(user_id, methodname: 'cancel'), method: :delete, class: 'friend_button'
       link_to 'Approve', friendship_path(user_id), method: :put, class: 'friend_button'
     else
-      link_to 'Send Friend Request', friendships_path(user_id), method: :post, class: 'friend_button'
+      link_to 'Send Friend Request', friendships_path(user_id: user_id), method: :post, class: 'friend_button'
     end
   end
 
