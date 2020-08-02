@@ -9,10 +9,9 @@ module UsersHelper
     elsif current_user.pending_friends.include?(user_id)
       link_to 'Cancel', friendship_path(user_id, method_name: 'cancel'), method: :delete, class: 'friend_button'
     elsif current_user.pending_received_requests.include?(user_id)
-      link_to 'Cancel', friendship_path(user_id, methodname: 'cancel'), method: :delete, class: 'friend_button'
-      link_to 'Approve', friendship_path(user_id), method: :put, class: 'friend_button'
+      render 'links', user_id: user_id
     else
-      link_to 'Send Friend Request', friendships_path(user_id: user_id), method: :post, class: 'friend_button'
+      link_to 'Send Request', friendships_path(friendship_id: user_id), method: :post, class: 'friend_button'
     end
   end
 

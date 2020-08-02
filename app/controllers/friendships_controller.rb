@@ -1,6 +1,5 @@
 class FriendshipsController < ApplicationController
   def create
-    # @friendship = current_user.friendships.build(friendship_id: friendship_params)
     @friendship = current_user.friendships.build(friendship_params)
     @friendship.status = 'Pending'
     return unless @friendship.save
@@ -26,10 +25,14 @@ class FriendshipsController < ApplicationController
       reverse_friendship = Friendship.where("user_id = #{current_user.id}"). where("friendship_id = #{params[:id]}")
       reverse_friendship.first.destroy
       flash[:notice] = 'Friend Request Removed'
-    else
+    elsif params[:method_name] == 'cancel'
       cancel_friendship = Friendship.where("user_id = #{current_user.id}"). where("friendship_id = #{params[:id]}")
       cancel_friendship.first.destroy
       flash[:notice] = 'Friend Request Cancelled'
+    else
+      reject_friendship = Friendship.where("friendship_id = #{current_user.id}"). where("user_id = #{params[:id]}")
+      reject_friendship.first.destroy
+      flash[:notice] = 'Friend Request Rejected'
     end
     redirect_to users_path
   end
@@ -37,6 +40,6 @@ class FriendshipsController < ApplicationController
   private
 
   def friendship_params
-    params.require(:friendship).permit(:user_id)
+    params.permit(:friendship_id)
   end
 end
