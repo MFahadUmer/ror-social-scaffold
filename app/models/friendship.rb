@@ -2,18 +2,20 @@ class Friendship < ApplicationRecord
   belongs_to :user
   belongs_to :friend, class_name: 'User', foreign_key: 'friendship_id'
 
-  def confirm_friendship(user)
-    friendship = friends_user.find { |friend| friend.user_id = user }
-    friendship.status = 'Confirmed'
-    friendship.save
+  def self.delete_friendship(current_user, friendship_id)
+    friendship = Friendship.where("friendship_id = #{current_user}"). where("user_id = #{friendship_id}")
+    friendship.first.destroy
+    reverse_friendship = Friendship.where("user_id = #{current_user}"). where("friendship_id = #{friendship_id}")
+    reverse_friendship.first.destroy
   end
 
-  def approve_request
-    @friendship.first.status = 'Confirmed'
-    if @friendship.first.save
-      @friendship = Friendship.create!(user_id: current_user.id, friendship_id: params[:id], status: 'Confirmed')
+  def self.cancel_friendship(method_name, current_user, friendship_id)
+    if method_name == 'Cancel'
+      reverse_friendship = Friendship.where("user_id = #{current_user}"). where("friendship_id = #{friendship_id}")
+      reverse_friendship.first.destroy
+    elsif method_name == 'Reject'
+      friendship = Friendship.where("friendship_id = #{current_user}"). where("user_id = #{friendship_id}")
+      friendship.first.destroy
     end
-    flash[:notice] = 'Friend Request Approved'
-    redirect_to users_path
   end
 end

@@ -5,9 +5,9 @@ module UsersHelper
 
   def friendship_status(user_id)
     if current_user.friend?(user_id)
-      link_to 'Unfriend', friendship_path(user_id, method_name: 'delete'), method: :delete, class: 'friend_button'
+      link_to 'Unfriend', friendship_path(user_id, method_name: 'Delete'), method: :delete, class: 'friend_button'
     elsif current_user.pending_friends.include?(user_id)
-      link_to 'Cancel', friendship_path(user_id, method_name: 'cancel'), method: :delete, class: 'friend_button'
+      link_to 'Cancel', friendship_path(user_id, method_name: 'Cancel'), method: :delete, class: 'friend_button'
     elsif current_user.pending_received_requests.include?(user_id)
       render 'links', user_id: user_id
     else
