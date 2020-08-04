@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-TBA
+[Heroku Link](https://frozen-tor-55690.herokuapp.com/)
 
 
 ## Getting Started
@@ -59,11 +59,16 @@ Open `http://localhost:3000/` in your browser.
 
 ### Deployment
 
-TBA
+Heroku
 
 ## Authors
 
-TBA
+👤 **Muhammad Fahad Umer**
+
+- Github: [@MFahadUmer](https://github.com/MFahadUmer)
+- Twitter: [@engfahadumer](https://twitter.com/engfahadumer)
+- Linkedin: [linkedin](https://www.linkedin.com/in/engineer-muhammad-fahad-e-umer-08813055/)
+
 
 ## 🤝 Contributing
 
