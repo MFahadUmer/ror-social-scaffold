@@ -151,8 +151,8 @@ a {
 
 .friends_List {
   text-align: center;
-  border-bottom: red double 10px;
-  border-top: red double 10px;
+  border-bottom: #ff4800 solid 5px;
+  border-top: #ff4800 solid 5px;
   color: #689f38;
   margin-bottom: 10px;
 }
@@ -297,6 +297,27 @@ form {
         font-size: 0.6em;
       }
     }
+  }
+}
+
+.show_grid {
+  display: grid;
+  grid-template-columns: 500px 1000px;
+
+  .mutual-section {
+    width: 500px;
+  }
+
+  .show-section {
+    width: 1000px;
+    padding: 0 10px 5px 10px;
+  }
+
+  .mutual-section,
+  .show-section {
+    border-bottom: #689f38 solid 5px;
+    border-left: #689f38 solid 5px;
+    border-right: #689f38 solid 5px;
   }
 }
 
