@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-[Heroku Link](https://radiant-mesa-42044.herokuapp.com/)
+[Heroku Link](https://frozen-tor-55690.herokuapp.com/)
 
 
 ## Getting Started
